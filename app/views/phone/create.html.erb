@@ -1,0 +1,18 @@
+<h1>Create a new phone record</h1>
+<%= form_with(model: @phone, url: phone_index_path) do |form| %>
+  <div>
+    <%= form.label :phone_number %>
+    <%= form.text_field :phone_number %>
+  </div>
+  <div>
+    <%= form.label :access %>
+    <%= form.text_field :access %>
+  </div>
+  <div>
+    <%= form.label :message %>
+    <%= form.text_area :message %>
+  </div>
+  <div>
+    <%= form.submit "Create" %>
+  </div>
+<% end %>

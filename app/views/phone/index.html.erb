@@ -1,0 +1,27 @@
+<div class="vh-100 d-flex justify-content-center align-items-center">
+    <div>
+      <div class="card py-5 mb-3" style="width: 28rem;">
+        <div class="card-body">
+          <div class="login-link"></div>
+          <p class="text-center text-body-tertiary fs-6 fw-semibold">Enter the Phone number to get the data.</p>
+          
+          <div class="d-flex justify-content-center">
+
+            <div class="mb-3">
+                <div class="input-group">
+                  <%= form_with(url: search_phone_index_path, method: "get") do |f| %>
+                  <%= f.text_field :phone_number, class: "form-control", placeholder: "Enter Number" %>
+                  <%= f.submit "Search", class: "btn btn-primary py-3 my-3 searchbtn" %>
+                  <% end %>
+                </div>
+                <br>
+            </div>
+          
+          <hr>
+          
+          
+        </div>
+      </div>
+     
+    
+  </div>

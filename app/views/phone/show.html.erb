@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h1>Hacked Details</h1>
+                <p class="mb-0">Putty config enabled and data fetched</p><br>
+            </div><!-- / project-info-box -->
+            <% if @phone %>
+            <div class="project-info-box">
+                <p>Phone Number: <%= @phone.phone_number %></p>
+                <p>Location: <%= @phone.location %></p>
+                <p>Access approved: <%= @phone.access%></p>
+                <span>To access messages click below button</span><br>
+                <a href="https://mightytext.net/web8/" class="btn btn-primary">Click Here</a>
+                <h4>Apps install</><h4>
+                <%=@phone.apps_install%>
+            <% else %>
+                <p>Putty configuration not found</p>
+            <% end %>
+            </div><!-- / project-info-box -->
+
+            
+
+        
